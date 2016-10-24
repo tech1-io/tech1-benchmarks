@@ -1,0 +1,252 @@
+[
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 0,
+    "active": false,
+    "age": 13,
+    "name": "Valarie Chavez",
+    "gender": "female",
+    "email": "valariechavez@liquidoc.com",
+    "phone": "+3 (954) 480-3755"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 1,
+    "active": false,
+    "age": 5,
+    "name": "Stark Grimes",
+    "gender": "male",
+    "email": "starkgrimes@liquidoc.com",
+    "phone": "+3 (967) 567-2458"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 2,
+    "active": false,
+    "age": 8,
+    "name": "Faulkner Sutton",
+    "gender": "male",
+    "email": "faulknersutton@liquidoc.com",
+    "phone": "+3 (845) 511-3993"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 3,
+    "active": true,
+    "age": 15,
+    "name": "Amanda Graves",
+    "gender": "female",
+    "email": "amandagraves@liquidoc.com",
+    "phone": "+3 (837) 523-3663"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 4,
+    "active": true,
+    "age": 14,
+    "name": "Julianne Webster",
+    "gender": "female",
+    "email": "juliannewebster@liquidoc.com",
+    "phone": "+3 (887) 427-3575"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 5,
+    "active": false,
+    "age": 9,
+    "name": "Flora Valentine",
+    "gender": "female",
+    "email": "floravalentine@liquidoc.com",
+    "phone": "+3 (807) 472-2342"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 6,
+    "active": true,
+    "age": 8,
+    "name": "Horn Lloyd",
+    "gender": "male",
+    "email": "hornlloyd@liquidoc.com",
+    "phone": "+3 (816) 469-2468"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 7,
+    "active": true,
+    "age": 7,
+    "name": "Fulton Conley",
+    "gender": "male",
+    "email": "fultonconley@liquidoc.com",
+    "phone": "+3 (865) 496-3255"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 8,
+    "active": true,
+    "age": 13,
+    "name": "Sawyer Gordon",
+    "gender": "male",
+    "email": "sawyergordon@liquidoc.com",
+    "phone": "+3 (809) 455-2733"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 9,
+    "active": true,
+    "age": 14,
+    "name": "Harvey Kline",
+    "gender": "male",
+    "email": "harveykline@liquidoc.com",
+    "phone": "+3 (846) 442-3138"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 10,
+    "active": true,
+    "age": 15,
+    "name": "Leta Drake",
+    "gender": "female",
+    "email": "letadrake@liquidoc.com",
+    "phone": "+3 (831) 518-2774"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 11,
+    "active": false,
+    "age": 9,
+    "name": "Mann Thornton",
+    "gender": "male",
+    "email": "mannthornton@liquidoc.com",
+    "phone": "+3 (904) 567-3702"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 12,
+    "active": false,
+    "age": 10,
+    "name": "Theresa Valenzuela",
+    "gender": "female",
+    "email": "theresavalenzuela@liquidoc.com",
+    "phone": "+3 (927) 442-3286"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 13,
+    "active": false,
+    "age": 12,
+    "name": "Gallagher Bauer",
+    "gender": "male",
+    "email": "gallagherbauer@liquidoc.com",
+    "phone": "+3 (986) 578-2649"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 14,
+    "active": false,
+    "age": 10,
+    "name": "Alta Terry",
+    "gender": "female",
+    "email": "altaterry@liquidoc.com",
+    "phone": "+3 (895) 414-3858"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 15,
+    "active": false,
+    "age": 6,
+    "name": "Morrow Roberson",
+    "gender": "male",
+    "email": "morrowroberson@liquidoc.com",
+    "phone": "+3 (861) 405-2108"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 16,
+    "active": true,
+    "age": 11,
+    "name": "Sharpe Mathis",
+    "gender": "male",
+    "email": "sharpemathis@liquidoc.com",
+    "phone": "+3 (938) 513-2551"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 17,
+    "active": true,
+    "age": 8,
+    "name": "Annmarie Owens",
+    "gender": "female",
+    "email": "annmarieowens@liquidoc.com",
+    "phone": "+3 (813) 423-2476"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 18,
+    "active": true,
+    "age": 9,
+    "name": "Montoya Kent",
+    "gender": "male",
+    "email": "montoyakent@liquidoc.com",
+    "phone": "+3 (894) 564-3479"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 19,
+    "active": true,
+    "age": 14,
+    "name": "Heather Alvarez",
+    "gender": "female",
+    "email": "heatheralvarez@liquidoc.com",
+    "phone": "+3 (908) 409-3003"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 20,
+    "active": false,
+    "age": 6,
+    "name": "Brock Silva",
+    "gender": "male",
+    "email": "brocksilva@liquidoc.com",
+    "phone": "+3 (833) 477-3095"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 21,
+    "active": false,
+    "age": 9,
+    "name": "Constance Burris",
+    "gender": "female",
+    "email": "constanceburris@liquidoc.com",
+    "phone": "+3 (924) 480-2226"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 22,
+    "active": true,
+    "age": 15,
+    "name": "Lenora Gallagher",
+    "gender": "female",
+    "email": "lenoragallagher@liquidoc.com",
+    "phone": "+3 (842) 432-2003"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 23,
+    "active": true,
+    "age": 11,
+    "name": "Marilyn Gilmore",
+    "gender": "female",
+    "email": "marilyngilmore@liquidoc.com",
+    "phone": "+3 (889) 463-3077"
+  },
+  {
+    "@class": "com.jedivision.entity.Youngling",
+    "id": 24,
+    "active": true,
+    "age": 5,
+    "name": "Katrina Franks",
+    "gender": "female",
+    "email": "katrinafranks@liquidoc.com",
+    "phone": "+3 (836) 580-2166"
+  }
+]
