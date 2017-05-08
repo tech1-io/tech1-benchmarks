@@ -9,4 +9,5 @@ Welcome to Jedi Benchmarks — Java JMH Benchmarks repository. May the force be 
 
 * JMH Java JSONs (Jackson, Gson, Genson, FlexJson)
 * JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack)
+* JMH Java Http Clients (OkHttp, Retrofit)
 * to be continued...
