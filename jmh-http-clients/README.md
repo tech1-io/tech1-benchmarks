@@ -2,6 +2,11 @@
 
 JMH Java Http Clients (OkHttp, Retrofit)
 
+# Steps to run benchmarks
+
+    mvn clean install
+    java -jar target/benchmarks.jar
+
 # Environment
 
     OS: Mac OS X
