@@ -17,9 +17,11 @@ import java.util.stream.Collectors;
 public class UnirestParamsPoloniexExchange extends PoloniexExchange {
     private static final Logger LOGGER = LoggerFactory.getLogger(UnirestParamsPoloniexExchange.class);
 
+    private static final String BASE_URL = "https://poloniex.com/public";
+
     @Override
     public void ticker() throws IOException, UnirestException {
-        HttpResponse<String> response = Unirest.get("https://poloniex.com/public")
+        HttpResponse<String> response = Unirest.get(BASE_URL)
                 .queryString("command", "returnTicker")
                 .asString();
         InputStream is = response.getRawBody();
@@ -29,7 +31,7 @@ public class UnirestParamsPoloniexExchange extends PoloniexExchange {
 
     @Override
     public void orderBook() throws IOException, UnirestException {
-        HttpResponse<String> response = Unirest.get("https://poloniex.com/public")
+        HttpResponse<String> response = Unirest.get(BASE_URL)
                 .queryString("command", "returnOrderBook")
                 .queryString("currencyPair", "all")
                 .queryString("depth", "100")
@@ -41,7 +43,7 @@ public class UnirestParamsPoloniexExchange extends PoloniexExchange {
 
     @Override
     public void trades() throws IOException, UnirestException {
-        HttpResponse<String> response = Unirest.get("https://poloniex.com/public")
+        HttpResponse<String> response = Unirest.get(BASE_URL)
                 .queryString("command", "returnTradeHistory")
                 .queryString("currencyPair", "BTC_NXT")
                 .queryString("start", "1410158341")

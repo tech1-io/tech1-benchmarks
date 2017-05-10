@@ -1,9 +1,11 @@
 # jmh-http-clients
 
-JMH Java Http Clients (OkHttp, Retrofit) application for exchanging public APIs (POLONIEX, KRAKEN, BITFINEX)
+JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) application for exchanging public APIs (POLONIEX, KRAKEN, BITFINEX)
 
 # Steps to run benchmarks
+
 `mvn clean install`
+
 `java -jar target/benchmarks.jar`
 
 # Environment

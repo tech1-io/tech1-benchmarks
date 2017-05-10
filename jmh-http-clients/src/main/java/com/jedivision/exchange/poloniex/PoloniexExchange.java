@@ -7,9 +7,9 @@ import java.io.IOException;
 
 public abstract class PoloniexExchange extends AbstractExchange {
 
-    abstract public void ticker() throws IOException, UnirestException;
-    abstract public void orderBook() throws IOException, UnirestException;
-    abstract public void trades() throws IOException, UnirestException;
+    public abstract void ticker() throws IOException, UnirestException;
+    public abstract void orderBook() throws IOException, UnirestException;
+    public abstract void trades() throws IOException, UnirestException;
 
     @Override
     protected String tickerURL() {

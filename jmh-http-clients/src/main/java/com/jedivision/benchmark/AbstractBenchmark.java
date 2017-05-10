@@ -11,9 +11,9 @@ import static org.openjdk.jmh.annotations.Mode.AverageTime;
 
 @BenchmarkMode(AverageTime)
 @OutputTimeUnit(SECONDS)
-@Fork(1)
-@Warmup(iterations = 1)
-@Measurement(iterations = 1)
+@Fork(2)
+@Warmup(iterations = 2)
+@Measurement(iterations = 15)
 public abstract class AbstractBenchmark {
 
     public static void main(String[] args) throws RunnerException {
