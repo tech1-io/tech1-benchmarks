@@ -14,6 +14,8 @@
         <java.version>1.8</java.version>
         <uberjar.name>benchmarks</uberjar.name>
         <!-- dependencies -->
+        <commons.http.client.version>3.1</commons.http.client.version>
+        <apache.http.client.version>4.5.3</apache.http.client.version>
         <jmh.version>1.19</jmh.version>
         <okhttp.version>3.7.0</okhttp.version>
         <slf4j.version>1.7.25</slf4j.version>
@@ -41,6 +43,12 @@
             <groupId>com.mashape.unirest</groupId>
             <artifactId>unirest-java</artifactId>
             <version>${unirest.java.version}</version>
+        </dependency>
+        <!-- Http Client: Commons HttpClient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>${commons.http.client.version}</version>
         </dependency>
         <!-- JMH-->
         <dependency>

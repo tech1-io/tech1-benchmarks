@@ -1,5 +1,6 @@
 package com.jedivision.exchange.poloniex;
 
+import com.mashape.unirest.http.exceptions.UnirestException;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -7,7 +8,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.stream.Collectors;
 
 @Service
 public class OkHttpPoloniexExchange extends PoloniexExchange {
@@ -20,26 +25,29 @@ public class OkHttpPoloniexExchange extends PoloniexExchange {
     }
 
     @Override
-    public void ticker() throws IOException {
+    public void ticker() throws IOException, UnirestException {
         Request request = new Request.Builder().url(this.tickerURL()).build();
         Response response = okHttpClient.newCall(request).execute();
-        String ticker = response.body().string();
+        InputStream is = response.body().byteStream();
+        String ticker = new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining("\n"));
         LOGGER.debug("Poloniex [OkHttp] ticker: " + ticker);
     }
 
     @Override
-    public void orderBook() throws IOException {
+    public void orderBook() throws IOException, UnirestException {
         Request request = new Request.Builder().url(orderBookURL()).build();
         Response response = okHttpClient.newCall(request).execute();
-        String orderBook = response.body().string();
+        InputStream is = response.body().byteStream();
+        String orderBook = new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining("\n"));
         LOGGER.debug("Poloniex [OkHttp] orderBook: " + orderBook);
     }
 
     @Override
-    public void trades() throws IOException {
+    public void trades() throws IOException, UnirestException {
         Request request = new Request.Builder().url(tradesURL()).build();
         Response response = okHttpClient.newCall(request).execute();
-        String trades = response.body().string();
+        InputStream is = response.body().byteStream();
+        String trades = new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining("\n"));
         LOGGER.debug("Poloniex [OkHttp] trades: " + trades);
     }
 }
