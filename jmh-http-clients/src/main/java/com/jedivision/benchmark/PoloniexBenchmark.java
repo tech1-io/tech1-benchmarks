@@ -8,4 +8,9 @@ public class PoloniexBenchmark extends AbstractState {
     public void okHttp(PoloniexState state) throws Exception {
         state.okHttp();
     }
+
+    @Benchmark
+    public void unirest(PoloniexState state) throws Exception {
+        state.unirest();
+    }
 }
