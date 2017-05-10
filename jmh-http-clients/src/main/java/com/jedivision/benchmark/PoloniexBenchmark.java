@@ -14,7 +14,7 @@ public class PoloniexBenchmark extends AbstractState {
         state.okHttp();
     }
 
-    /*@Benchmark
+    @Benchmark
     public void unirest(PoloniexState state) throws Exception {
         state.unirest();
     }
@@ -22,5 +22,5 @@ public class PoloniexBenchmark extends AbstractState {
     @Benchmark
     public void unirestParams(PoloniexState state) throws Exception {
         state.unirestParams();
-    }*/
+    }
 }

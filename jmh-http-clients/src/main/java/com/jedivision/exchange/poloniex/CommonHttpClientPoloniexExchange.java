@@ -29,7 +29,7 @@ public class CommonHttpClientPoloniexExchange extends PoloniexExchange {
         httpClient.executeMethod(method);
         InputStream is = method.getResponseBodyAsStream();
         String ticker = new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining("\n"));
-        LOGGER.info("Poloniex [CommonsHttpClient] ticker: " + ticker);
+        LOGGER.debug("Poloniex [CommonsHttpClient] ticker: " + ticker);
     }
 
     @Override
