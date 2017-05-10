@@ -10,6 +10,11 @@ public class PoloniexBenchmark extends AbstractState {
     }
 
     @Benchmark
+    public void jersey(PoloniexState state) throws Exception {
+        state.jersey();
+    }
+
+    @Benchmark
     public void okHttp(PoloniexState state) throws Exception {
         state.okHttp();
     }
