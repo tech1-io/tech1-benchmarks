@@ -7,10 +7,11 @@ import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import static java.util.concurrent.TimeUnit.MICROSECONDS;
+import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.openjdk.jmh.annotations.Mode.AverageTime;
 
 @BenchmarkMode(AverageTime)
-@OutputTimeUnit(MICROSECONDS)
+@OutputTimeUnit(SECONDS)
 @Fork(2)
 @Warmup(iterations = 2)
 @Measurement(iterations = 5)
