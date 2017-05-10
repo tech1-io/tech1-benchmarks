@@ -2,6 +2,7 @@ package com.jedivision.benchmark;
 
 import com.jedivision.configuration.Application;
 import com.jedivision.exchange.poloniex.OkHttpPoloniexExchange;
+import com.jedivision.exchange.poloniex.UnirestParamsPoloniexExchange;
 import com.jedivision.exchange.poloniex.UnirestPoloniexExchange;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.openjdk.jmh.annotations.Scope;
@@ -19,6 +20,7 @@ public abstract class AbstractState extends AbstractBenchmark {
 
         private final OkHttpPoloniexExchange okHttpPoloniexExchange = context.getBean(OkHttpPoloniexExchange.class);
         private final UnirestPoloniexExchange unirestPoloniexExchange = context.getBean(UnirestPoloniexExchange.class);
+        private final UnirestParamsPoloniexExchange unirestParamsPoloniexExchange = context.getBean(UnirestParamsPoloniexExchange.class);
 
         public void okHttp() throws IOException {
             okHttpPoloniexExchange.ticker();
@@ -30,6 +32,12 @@ public abstract class AbstractState extends AbstractBenchmark {
             unirestPoloniexExchange.ticker();
             unirestPoloniexExchange.orderBook();
             unirestPoloniexExchange.trades();
+        }
+
+        public void unirestParams() throws IOException, UnirestException {
+            unirestParamsPoloniexExchange.ticker();
+            unirestParamsPoloniexExchange.orderBook();
+            unirestParamsPoloniexExchange.trades();
         }
     }
 }

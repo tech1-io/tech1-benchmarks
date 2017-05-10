@@ -13,4 +13,9 @@ public class PoloniexBenchmark extends AbstractState {
     public void unirest(PoloniexState state) throws Exception {
         state.unirest();
     }
+
+    @Benchmark
+    public void unirestParams(PoloniexState state) throws Exception {
+        state.unirestParams();
+    }
 }
