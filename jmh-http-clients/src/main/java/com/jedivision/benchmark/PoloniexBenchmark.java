@@ -10,6 +10,11 @@ public class PoloniexBenchmark extends AbstractState {
     }
 
     @Benchmark
+    public void jcabi(PoloniexState state) throws Exception {
+        state.jcabi();
+    }
+
+    @Benchmark
     public void jersey(PoloniexState state) throws Exception {
         state.jersey();
     }

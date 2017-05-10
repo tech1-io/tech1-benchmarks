@@ -17,6 +17,7 @@ public abstract class AbstractState extends AbstractBenchmark {
         private final ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
 
         private final CommonHttpClientPoloniexExchange commonHttpClientPoloniexExchange = context.getBean(CommonHttpClientPoloniexExchange.class);
+        private final JcabiPoloniexExchange jcabiPoloniexExchange = context.getBean(JcabiPoloniexExchange.class);
         private final JerseyPoloniexExchange jerseyPoloniexExchange = context.getBean(JerseyPoloniexExchange.class);
         private final OkHttpPoloniexExchange okHttpPoloniexExchange = context.getBean(OkHttpPoloniexExchange.class);
         private final UnirestPoloniexExchange unirestPoloniexExchange = context.getBean(UnirestPoloniexExchange.class);
@@ -26,6 +27,12 @@ public abstract class AbstractState extends AbstractBenchmark {
             commonHttpClientPoloniexExchange.ticker();
             commonHttpClientPoloniexExchange.orderBook();
             commonHttpClientPoloniexExchange.trades();
+        }
+
+        public void jcabi() throws IOException, UnirestException {
+            jcabiPoloniexExchange.ticker();
+            jcabiPoloniexExchange.orderBook();
+            jcabiPoloniexExchange.trades();
         }
 
         public void jersey() throws IOException, UnirestException {
