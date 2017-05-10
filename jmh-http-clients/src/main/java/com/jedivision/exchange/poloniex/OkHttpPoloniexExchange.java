@@ -4,15 +4,15 @@ import com.jedivision.exchange.AbstractExchange;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 
 @Service
 public class OkHttpPoloniexExchange implements AbstractExchange {
-    private static final String POLONIEX_TICKER_URL = "https://poloniex.com/public?command=returnTicker";
-    private static final String POLONIEX_ORDERBOOK_URL = "https://poloniex.com/public?command=returnOrderBook&currencyPair=all&depth=100";
-    private static final String POLONIEX_TRADES_URL = "https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_NXT&start=1410158341&end=1410499372";
+    private static final Logger LOGGER = LoggerFactory.getLogger(OkHttpPoloniexExchange.class);
 
     private final OkHttpClient okHttpClient;
 
@@ -21,29 +21,41 @@ public class OkHttpPoloniexExchange implements AbstractExchange {
     }
 
     @Override
-    public void publicApiCalls() throws IOException {
-        // call ticker
-        Request tickerRequest = new Request.Builder()
-                .url(POLONIEX_TICKER_URL)
-                .build();
+    public void ticker() throws IOException {
+        Request request = new Request.Builder().url(this.tickerURL()).build();
+        Response response = okHttpClient.newCall(request).execute();
+        String ticker = response.body().string();
+        LOGGER.debug("Poloniex ticker: " + ticker);
+    }
 
-        Response tickerResponse = okHttpClient.newCall(tickerRequest).execute();
-        String ticker = tickerResponse.body().string();
+    @Override
+    public void orderBook() throws IOException {
+        Request request = new Request.Builder().url(orderBookURL()).build();
+        Response response = okHttpClient.newCall(request).execute();
+        String orderBook = response.body().string();
+        LOGGER.debug("Poloniex orderBook: " + orderBook);
+    }
 
-        // call orderBook
-        Request orderBookRequest = new Request.Builder()
-                .url(POLONIEX_ORDERBOOK_URL)
-                .build();
+    @Override
+    public void trades() throws IOException {
+        Request request = new Request.Builder().url(tradesURL()).build();
+        Response response = okHttpClient.newCall(request).execute();
+        String trades = response.body().string();
+        LOGGER.debug("Poloniex trades: " + trades);
+    }
 
-        Response orderBookResponse = okHttpClient.newCall(tickerRequest).execute();
-        String orderBook = orderBookResponse.body().string();
+    @Override
+    public String tickerURL() {
+        return "https://poloniex.com/public?command=returnTicker";
+    }
 
-        // call call trades
-        Request tradesRequest = new Request.Builder()
-                .url(POLONIEX_TRADES_URL)
-                .build();
+    @Override
+    public String orderBookURL() {
+        return "https://poloniex.com/public?command=returnOrderBook&currencyPair=all&depth=100";
+    }
 
-        Response tradesResponse = okHttpClient.newCall(tickerRequest).execute();
-        String trades = tradesResponse.body().string();
+    @Override
+    public String tradesURL() {
+        return "https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_NXT&start=1410158341&end=1410499372";
     }
 }
