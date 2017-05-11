@@ -1,8 +1,8 @@
-package com.jedivision.benchmark;
+package com.jedivision.benchmark.poloniex;
 
 import org.openjdk.jmh.annotations.Benchmark;
 
-public class PoloniexBenchmark extends AbstractState {
+public class PoloniexBenchmark extends AbstractPoloniex {
 
     @Benchmark
     public void commonHttpClient(PoloniexState state) throws Exception {
