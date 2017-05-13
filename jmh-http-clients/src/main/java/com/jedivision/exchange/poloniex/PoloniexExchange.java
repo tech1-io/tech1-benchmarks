@@ -6,6 +6,8 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import java.io.IOException;
 
 public abstract class PoloniexExchange extends AbstractExchange {
+    protected static final String POLONIEX = "Poloniex";
+    protected static final String POLONIEX_BASE_URL = "https://poloniex.com/public";
 
     public abstract void ticker() throws IOException, UnirestException;
     public abstract void orderBook() throws IOException, UnirestException;
@@ -13,16 +15,16 @@ public abstract class PoloniexExchange extends AbstractExchange {
 
     @Override
     protected String tickerURL() {
-        return "https://poloniex.com/public?command=returnTicker";
+        return POLONIEX_BASE_URL + "?command=returnTicker";
     }
 
     @Override
     protected String orderBookURL() {
-        return "https://poloniex.com/public?command=returnOrderBook&currencyPair=all&depth=100";
+        return POLONIEX_BASE_URL + "?command=returnOrderBook&currencyPair=all&depth=100";
     }
 
     @Override
     protected String tradesURL() {
-        return "https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_NXT&start=1410158341&end=1410499372";
+        return POLONIEX_BASE_URL + "?command=returnTradeHistory&currencyPair=BTC_NXT&start=1410158341&end=1410499372";
     }
 }

@@ -1,43 +1,31 @@
 package com.jedivision.exchange.bitfinex;
 
-import com.mashape.unirest.http.exceptions.UnirestException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.jedivision.exchange.client.JerseyClient;
 import org.springframework.stereotype.Service;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import java.io.IOException;
 
 @Service
 public class JerseyBitfinexExchange extends BitfinexExchange {
-    private static final Logger LOGGER = LoggerFactory.getLogger(JerseyBitfinexExchange.class);
 
-    private final Client client;
+    private final JerseyClient jerseyClient;
 
-    public JerseyBitfinexExchange(Client client) {
-        this.client = client;
+    public JerseyBitfinexExchange(JerseyClient jerseyClient) {
+        this.jerseyClient = jerseyClient;
     }
 
     @Override
-    public void ticker() throws IOException, UnirestException {
-        Response response = client.target(tickerURL()).request(MediaType.APPLICATION_JSON_TYPE).get();
-        String ticker = response.readEntity(String.class);
-        LOGGER.debug("Bitfinex [Jersey] ticker: " + ticker);
+    public void ticker() throws IOException {
+        jerseyClient.ticker(tickerURL(), BITFINEX);
     }
 
     @Override
-    public void orderBook() throws IOException, UnirestException {
-        Response response = client.target(orderBookURL()).request(MediaType.APPLICATION_JSON_TYPE).get();
-        String orderBook = response.readEntity(String.class);
-        LOGGER.debug("Bitfinex [Jersey] orderBook: " + orderBook);
+    public void orderBook() throws IOException {
+        jerseyClient.orderBook(orderBookURL(), BITFINEX);
     }
 
     @Override
-    public void trades() throws IOException, UnirestException {
-        Response response = client.target(tradesURL()).request(MediaType.APPLICATION_JSON_TYPE).get();
-        String trades = response.readEntity(String.class);
-        LOGGER.debug("Bitfinex [Jersey] trades: " + trades);
+    public void trades() throws IOException {
+        jerseyClient.trades(tradesURL(), BITFINEX);
     }
 }
