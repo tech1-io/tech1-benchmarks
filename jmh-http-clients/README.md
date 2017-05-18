@@ -27,7 +27,9 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 | c.j.b.poloniex.PoloniexBenchmark.unirest           | avgt |    30 |   2.198 | ± |  0.179 | us/op |
 | c.j.b.poloniex.PoloniexBenchmark.unirestParams     | avgt |    30 |   2.021 | ± |  0.180 | us/op |
 
-### POLONIEX summary
+<p align="center">
+	<img src="https://github.com/JediVision-Software/jedi-benchmarks/blob/master/jmh-http-clients/img/Poloniex.png?raw=true" alt=""/>
+</p>
 
 # BITFINEX
 ### BITFINEX public APIs
@@ -41,7 +43,9 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 | c.j.b.bitfinex.BitfinexBenchmark.unirest           | avgt |    30 |   0.875 | ± |  0.527 | us/op |
 | c.j.b.bitfinex.BitfinexBenchmark.unirestParams     | avgt |    30 |   0.729 | ± |  0.232 | us/op |
 
-### BITFINEX summary
+<p align="center">
+	<img src="https://github.com/JediVision-Software/jedi-benchmarks/blob/master/jmh-http-clients/img/Bitfinex.png?raw=true" alt=""/>
+</p>
 
 # KRAKEN
 ### KRAKEN public APIs
@@ -55,4 +59,6 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 | c.j.b.kraken.KrakenBenchmark.unirest           | avgt |    30 |   1.518 | ± |  0.568 | us/op |
 | c.j.b.kraken.KrakenBenchmark.unirestParams     | avgt |    30 |   1.159 | ± |  0.604 | us/op |
 
-### KRAKEN summary
+<p align="center">
+	<img src="https://github.com/JediVision-Software/jedi-benchmarks/blob/master/jmh-http-clients/img/Kraken.png?raw=true" alt=""/>
+</p>
