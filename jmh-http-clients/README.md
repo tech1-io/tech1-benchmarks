@@ -62,3 +62,10 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 <p align="center">
 	<img src="https://github.com/JediVision-Software/jedi-benchmarks/blob/master/jmh-http-clients/img/Kraken.png?raw=true" alt=""/>
 </p>
+
+# Summary
+
+    1) Unirest - get gold medals, http-client "winner" 
+    2) OkHttp - get silver medal
+    3) JCabi, Jersey, CommonHttpClient - get bronze medal
+
