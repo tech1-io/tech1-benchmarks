@@ -45,7 +45,7 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
 | c.j.b.youngling.ToJsonYoungling.flexjson | avgt |    10 | 101.924 | ± | 32.639 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jedi-benchmarks/blob/master/jmh-jsons/img/ToJsonYoungling.jpg?raw=true" alt=""/>
+	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-jsons/img/ToJsonYoungling.jpg?raw=true" alt=""/>
 </p>
 
 ### Youngling convert from JSON
@@ -58,7 +58,7 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
 | c.j.b.youngling.FromJsonYoungling.flexjson | avgt |    10 | 157.928 | ± | 96.220 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jedi-benchmarks/blob/master/jmh-jsons/img/FromJsonYoungling.jpg?raw=true" alt=""/>
+	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-jsons/img/FromJsonYoungling.jpg?raw=true" alt=""/>
 </p>
 
 ### Youngling summary
@@ -105,7 +105,7 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
 | c.j.b.padawan.ToJsonPadawan.gson     | avgt |    10 | 4905.696 | ± | 1521.152 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jedi-benchmarks/blob/master/jmh-jsons/img/ToJsonPadawan.jpg?raw=true" alt=""/>
+	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-jsons/img/ToJsonPadawan.jpg?raw=true" alt=""/>
 </p>
 
 ### Padawan convert from JSON
@@ -118,7 +118,7 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
 | c.j.b.padawan.FromJsonPadawan.flexjson | avgt |    10 | 14682.631 | ± | 4348.925 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jedi-benchmarks/blob/master/jmh-jsons/img/FromJsonPadawan.jpg?raw=true" alt=""/>
+	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-jsons/img/FromJsonPadawan.jpg?raw=true" alt=""/>
 </p>
 
 ### Padawan summary
@@ -180,7 +180,7 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
 | c.j.b.master.ToJsonMaster.gson     | avgt |    10 | 51570.067 | ± |  7290.569 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jedi-benchmarks/blob/master/jmh-jsons/img/ToJsonMaster.jpg?raw=true" alt=""/>
+	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-jsons/img/ToJsonMaster.jpg?raw=true" alt=""/>
 </p>
 
 ### Master convert from JSON
@@ -193,7 +193,7 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
 | c.j.b.master.FromJsonMaster.flexjson | avgt |    10 | 187056.779 | ± | 59337.826 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jedi-benchmarks/blob/master/jmh-jsons/img/FromJsonMaster.jpg?raw=true" alt=""/>
+	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-jsons/img/FromJsonMaster.jpg?raw=true" alt=""/>
 </p>
 
 ### Master summary
