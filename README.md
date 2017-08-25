@@ -11,3 +11,4 @@ Welcome to Jedi Benchmarks — Java JMH Benchmarks repository. May the force be 
 * JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack)
 * JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest)
 * to be continued...
+
