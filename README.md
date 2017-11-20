@@ -1,5 +1,5 @@
-# jdv-benchmarks
-Welcome to Jedi Benchmarks — Java JMH Benchmarks repository. May the force be with you.
+# forcelate-benchmarks
+Welcome to Forcelate Benchmarks — Java JMH Benchmarks repository. May the force be with you.
 
 <p align="center">
 	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/img/jedi-benchmarks.png?raw=true" alt=""/>
