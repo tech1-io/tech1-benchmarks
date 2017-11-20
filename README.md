@@ -2,7 +2,7 @@
 Welcome to Jedi Benchmarks — Java JMH Benchmarks repository. May the force be with you.
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/img/jedi-benchmarks.png?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/img/jedi-benchmarks.png?raw=true" alt=""/>
 </p>
 
 # Benchmarks:

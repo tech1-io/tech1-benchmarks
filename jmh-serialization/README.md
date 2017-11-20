@@ -49,7 +49,7 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
 | c.j.t.b.youngling.SerializationYoungling.messagePack  | avgt |    20 | 49.838 | ± | 1.602 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-serialization/img/SerializationYoungling.jpg?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-serialization/img/SerializationYoungling.jpg?raw=true" alt=""/>
 </p>
 
 ### Youngling deserialization
@@ -67,7 +67,7 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
 | c.j.t.b.youngling.DeserializationYoungling.jdk          | avgt |    20 | 262.363 | ± | 12.974 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-serialization/img/DeserializationYoungling.jpg?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-serialization/img/DeserializationYoungling.jpg?raw=true" alt=""/>
 </p>
 
 ### Youngling summary
@@ -118,7 +118,7 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
 | c.j.t.b.padawan.SerializationPadawan.messagePack  | avgt |    20 | 4221.451 | ± | 251.481 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-serialization/img/SerializationPadawan.jpg?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-serialization/img/SerializationPadawan.jpg?raw=true" alt=""/>
 </p>
 
 ### Padawan deserialization
@@ -135,7 +135,7 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
 | c.j.t.b.padawan.DeserializationPadawan.messagePack  | avgt |    20 |  5060.018 | ± | 1432.821 | us/op |
 | c.j.t.b.padawan.DeserializationPadawan.jdk          | avgt |    20 | 12454.951 | ± |  255.441 | us/op |
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-serialization/img/DeserializationPadawan.jpg?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-serialization/img/DeserializationPadawan.jpg?raw=true" alt=""/>
 </p>
 
 ### Padawan summary
@@ -202,7 +202,7 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
 | c.j.t.b.master.SerializationMaster.fastjson     | avgt |    20 | 75266.191 | ± | 6477.615 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-serialization/img/SerializationMaster.jpg?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-serialization/img/SerializationMaster.jpg?raw=true" alt=""/>
 </p>
 
 ### Master deserialization
@@ -220,7 +220,7 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
 | c.j.t.b.master.DeserializationMaster.jdk          | avgt |    20 | 70896.623 | ± |  1098.658 | us/op |
 
 <p align="center">
-	<img src="https://github.com/jedivision-software/jdv-benchmarks/blob/master/jmh-serialization/img/DeserializationMaster.jpg?raw=true" alt=""/>
+	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-serialization/img/DeserializationMaster.jpg?raw=true" alt=""/>
 </p>
 
 ### Master summary
