@@ -6,6 +6,13 @@ pipeline {
     triggers {
         pollSCM('H */1 * * *')
     }
+    stages {
+        stage('check') {
+            steps {
+                sh 'echo checking...'
+            }
+        }
+    }
     post {
         always {
             script {
