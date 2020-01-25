@@ -15,7 +15,7 @@
         <!-- dependencies -->
         <fastjson.version>1.2.13</fastjson.version>
         <fst.version>2.47</fst.version>
-        <jackson.version>2.7.4</jackson.version>
+        <jackson.version>2.10.2</jackson.version>
         <jmh.version>1.12</jmh.version>
         <kryo.version>4.0.0</kryo.version>
         <log4j.version>1.2.17</log4j.version>
