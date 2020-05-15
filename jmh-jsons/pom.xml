@@ -19,7 +19,7 @@
         <genson.version>1.4</genson.version>
         <gson.version>2.7</gson.version>
         <flexjson.version>3.3</flexjson.version>
-        <jackson.version>2.7.4</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
         <jmh.version>1.12</jmh.version>
         <lombok.version>1.16.6</lombok.version>
         <slf4j.version>1.7.21</slf4j.version>
