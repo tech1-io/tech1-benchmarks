@@ -28,7 +28,7 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 | c.j.b.poloniex.PoloniexBenchmark.unirestParams     | avgt |    30 |   2.021 | ± |  0.180 | us/op |
 
 <p align="center">
-	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-http-clients/img/Poloniex.png?raw=true" alt=""/>
+	<img src="https://github.com/tech1-io/tech1-benchmarks/blob/master/jmh-http-clients/img/Poloniex.png?raw=true" alt=""/>
 </p>
 
 # BITFINEX
@@ -44,7 +44,7 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 | c.j.b.bitfinex.BitfinexBenchmark.unirestParams     | avgt |    30 |   0.729 | ± |  0.232 | us/op |
 
 <p align="center">
-	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-http-clients/img/Bitfinex.png?raw=true" alt=""/>
+	<img src="https://github.com/tech1-io/tech1-benchmarks/blob/master/jmh-http-clients/img/Bitfinex.png?raw=true" alt=""/>
 </p>
 
 # KRAKEN
@@ -60,7 +60,7 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
 | c.j.b.kraken.KrakenBenchmark.unirestParams     | avgt |    30 |   1.159 | ± |  0.604 | us/op |
 
 <p align="center">
-	<img src="https://github.com/forcelate/forcelate-benchmarks/blob/master/jmh-http-clients/img/Kraken.png?raw=true" alt=""/>
+	<img src="https://github.com/tech1-io/tech1-benchmarks/blob/master/jmh-http-clients/img/Kraken.png?raw=true" alt=""/>
 </p>
 
 # Summary
