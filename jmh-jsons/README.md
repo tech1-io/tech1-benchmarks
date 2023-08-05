@@ -207,3 +207,4 @@ JMH Java JSONs (Jackson, Gson, Genson, FlexJson) application for different compl
     1) Jackson implementation shows efficient result for any JSON complexity
     2) Gson and Genson implementations show average similar results
     3) FlexJson implementation shows unexpectedly unefficient result for deserilization for complex JSON
+

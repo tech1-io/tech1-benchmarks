@@ -1,11 +1,8 @@
 # tech1-benchmarks
 ### NO LONGER SUPPORTED
 
-Welcome to Tech1 Benchmarks Java JMH Benchmarks repository  
-May the force be with you  
-
 <p align="center">
-	<img src="https://github.com/tech1-io/tech1-benchmarks/blob/master/img/tech1-benchmarks.png?raw=true" alt=""/>
+	<img src="https://github.com/tech1-io/tech1-benchmarks/blob/main/img/tech1-benchmarks.png?raw=true" alt=""/>
 </p>
 
 # Benchmarks:
