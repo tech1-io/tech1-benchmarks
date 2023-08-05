@@ -69,4 +69,3 @@ JMH Java Http Clients (CommonsHttpClient, Jcabi, Jersey, OkHttp, Unirest) applic
     2) OkHttp - get silver medal
     3) JCabi, Jersey, CommonHttpClient - get bronze medal
 
-

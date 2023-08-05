@@ -236,4 +236,3 @@ JMH Java Serialization (JDK, FastJson, Jackson, FST, Kryo, MessagePack) applicat
     2) Default JDK is very slow
     3) FST, Kryo, Jackson implementations is efficient depending on JSON structure
     4) MessagePack implementation is slow
-
